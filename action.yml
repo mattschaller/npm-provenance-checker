@@ -1,0 +1,29 @@
+name: 'npm-provenance-checker'
+description: 'Batch-verify npm provenance attestations across your project lockfile'
+inputs:
+  lockfile:
+    description: 'Path to lockfile (auto-detected if omitted)'
+    required: false
+    default: ''
+  format:
+    description: 'Output format: text, json, html'
+    required: false
+    default: 'text'
+  threshold:
+    description: 'Minimum provenance score (0-100). Fails if below.'
+    required: false
+    default: '0'
+  prod-only:
+    description: 'Only check production dependencies'
+    required: false
+    default: 'false'
+  concurrency:
+    description: 'Max concurrent registry checks'
+    required: false
+    default: '20'
+branding:
+  icon: 'shield'
+  color: 'green'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

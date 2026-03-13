@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tgz
+.DS_Store
+.env
+.env.*
+.npmrc
+*.pem
+*.key
+coverage/
