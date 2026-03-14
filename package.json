@@ -17,12 +17,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mattschaller/npm-provenance-checker"
+    "url": "git+https://github.com/mattschaller/npm-provenance-checker.git"
   },
   "author": "Matthew Schaller <matt@mattschaller.com>",
   "type": "module",
   "bin": {
-    "npm-provenance-checker": "./dist/index.js"
+    "npm-provenance-checker": "dist/index.js"
   },
   "exports": {
     ".": {
@@ -47,10 +47,10 @@
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.0.0",
+    "@types/node": "^25.5.0",
     "tsup": "^8.0.0",
     "typescript": "^5.5.0",
-    "vitest": "^3.0.0"
+    "vitest": "^4.1.0"
   },
   "engines": {
     "node": ">=20.0.0"
